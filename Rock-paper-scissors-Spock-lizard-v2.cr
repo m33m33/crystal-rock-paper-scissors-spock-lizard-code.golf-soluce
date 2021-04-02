@@ -31,8 +31,7 @@ r="🦎 eats 📄"
 end
 return r
 end
-while ARGV.size>0
-g=ARGV.first
+ARGV.each do |g|
 f=g[0]
 s=g[1]
 r=w(f,s)
@@ -40,6 +39,4 @@ if r==nil
 r=w(s,f)
 end
 puts(r)
-ARGV.shift
 end
-
